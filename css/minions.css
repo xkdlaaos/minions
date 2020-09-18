@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* ========================================
+	작성자 : sprax@naver.com
+	소속 : 한울직업전문학교
+	작성일 : 2020.09.17
+	※ 소스코드를 수정/삭제하실때는 담당부서로 연락바랍니다.
+=========================================*/		
+body {
+	font-family: 'Maven Pro', 'Noto Sans KR',sans-serif;
+	font-size:16px;
+	color:#000;
+	background-color:#fff;	
+}
+a,a:link {
+	text-decoration:none;
+	color:inherit;
+}
+.notext {
+	display:none;
+}
+/*=============== header ============== */
+.header_wrapper {
+	border-bottom:2px solid #f9c02d;
+}
+#header {
+	width:920px;
+	height:200px;
+	margin:0 auto;	
+	position:relative;
+}
+.top_menu {
+	float:left;
+}
+.top_menu li {
+	float:left;
+	margin-right:10px;
+	line-height:200px;
+}
+.main_logo {
+	position:absolute;
+	width:299px;
+	height:142px;
+	left:50%;
+	bottom:-2px;
+	transform:translateX(-50%);
+}
+.sns_menu {
+	line-height:200px;
+	float:right;
+}
+.sns_menu li {
+	float:left;
+	margin-left:10px;
+}
+
+/*================= nav===================== */
+.nav {
+	text-align:center;
+	border-bottom:1px solid #eee;
+	height:50px;
+}
+#gnb {
+	width:400px;
+	margin:0 auto;
+}
+#gnb li {
+	display:inline-block;
+	margin:0 5px;
+	line-height:50px;
+}
+/* 마우스 오버시 메뉴 텍스트 색상을 변경하려면? 각자 , 해결해보세요!  */
+#gnb li a {
+	font-size:18px;
+	color:#f9c02d;
+	font-weight:700;
+	transition:color 0.3s;
+}
+#gnb li a:hover {
+	color:#000;
+}
+
+/* =============== youtube-wrapper ============== */
+#youtube-movie {
+	width:920px;
+	height:460px;
+	margin:30px auto;
+	position:relative;
+}
+#youtube-movie iframe {
+	width:100%; /* 부모요소 크기에 비례해서~ */
+	height:100%;
+	border:0;
+}
+#movie-character {
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translateX(-50%);
+}
+/* ================ main ==================== */
+.main-title {	
+	text-align:center;
+	margin-top:160px;
+	font-size:30px;
+	color:#f9c02d;
+	font-weight:bolder;
+	text-transform:capitalize;
+}
+.character	{
+	width:920px;
+	height:306px;
+	margin:30px auto;
+	font-size:0;
+}
+.character li {
+	/* display:inline-block; */
+	/* border:1px solid #f9c02d; */
+	/* width:306px; */
+	/* height:306px; */
+	/* box-sizeing:border-box; */
+	/* overflow:hidden; */
+	float:left;
+	border:1px solid #f9c02d;
+	overflow:hidden;
+	width:306px;
+	height:306px;
+	box-sizing:border-box;
+}
+	
+.character li:nth-child(2) {
+	width:306px;			
+}
+.character li:hover {
+	border-color:#f9c02d;
+	transition:border-color 0.3s;
+}
+.character li:hover img {
+	transition:transform 0.3s;
+	transform:scale(1.4,1.4);
+}
+
+/*======================evern==========================*/
+.event_wrapper {
+	background:#f9c02d;
+}
+.event {
+	width:920px;
+	margin:0 auto;
+}
+
+/*========================footer =======================*/
+#footer {
+	/* 블럭요소 가로폭 : 100%(기본값) */
+	max-width:920px; /* 최대 */
+	margin:0 auto;
+	padding:15px 0;
+	position:relative;
+}
+.extra_menu li {
+	display:inline-block;
+}
+.extra_menu li:nth-child(2):after {
+	content:'';
+	width:1px;
+	background:#333;
+	display:lnline-block;
+	padding:0 10px;
+}
+.sub_logo {
+	position:absolute;
+	right:0;
+	top:40%;
+	transform:translateY(50%);
+	transform:translateX(80%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
